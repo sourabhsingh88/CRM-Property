@@ -1,0 +1,19 @@
+fastapi==0.115.0
+uvicorn==0.30.1
+pydantic==2.9.2
+pydantic-settings==2.4.0
+python-multipart==0.0.9
+
+# MongoDB
+motor==3.5.1
+pymongo==4.8.0
+
+# CORS (optional but usually needed)
+starlette==0.38.2
+
+# Image processing (only required if you do cropping later)
+Pillow==11.0.0
+sqlalchemy
+pymysql
+python-multipart
+pydantic
