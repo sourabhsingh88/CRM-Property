@@ -10,8 +10,3 @@ pydantic==2.9.2
 pydantic-settings==2.4.0
 python-dotenv==1.0.1
 
-# only if you use CORS
-starlette==0.36.3
-
-# only if you store images locally or handle images
-Pillow==11.0.0
