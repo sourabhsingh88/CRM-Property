@@ -8,4 +8,4 @@ class Client(Base):
     name = Column(String(255), nullable=False)
     designation = Column(String(255), nullable=False)
     description = Column(Text, nullable=False)
-    image = Column(LargeBinary)   # store image as bytes
+    image = Column(String, nullable=True)  # store image as bytes

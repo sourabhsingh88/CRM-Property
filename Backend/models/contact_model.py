@@ -9,3 +9,5 @@ class Contact(Base):
     email = Column(String(255), nullable=False)
     mobile = Column(String(25), nullable=False)
     city = Column(String(255), nullable=False)
+
+

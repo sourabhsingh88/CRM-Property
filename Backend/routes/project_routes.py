@@ -75,3 +75,12 @@ async def add_project(
     db.refresh(new_project)
 
     return {"message": "Project added successfully", "id": new_project.id}
+
+
+@router.delete("/delete/{id}")
+def delete_project(id: int, db: Session = Depends(get_db)):
+    row = db.query(Project).filter(Project.id == id).first()
+    if row:
+        db.delete(row)
+        db.commit()
+    return {"message": "Deleted"}
